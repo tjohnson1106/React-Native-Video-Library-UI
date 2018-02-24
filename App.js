@@ -29,7 +29,10 @@ const CustomDrawerContentComponent = props => (
 );
 
 const drawerNavigatorConfig = {
-  contentComponent: props => <CustomDrawerContentComponent {...props} />
+  contentComponent: props => <CustomDrawerContentComponent {...props} />,
+  drawerOpenRoute: "DrawerOpen",
+  drawerCloseRoute: "DrawerClose",
+  drawerToggleRoute: "DrawerToggle"
 };
 
 const AppDrawer = DrawerNavigator(drawerRouteConfig, drawerNavigatorConfig);
