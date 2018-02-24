@@ -107,10 +107,10 @@ class HomeScreen extends Component {
   }
 
   renderUserNaviagation() {
-    const UserNavigation = [{ title: "browse", id: "browse" }, { title: "MY LIST", id: "my-list" }];
+    const userNavigation = [{ title: "BROWSE", id: "browse" }, { title: "MY LIST", id: "my-list" }];
     const { selected } = this.state;
 
-    return UserNavigation.map((element, index) => {
+    return userNavigation.map((element, index) => {
       if (selected === element.id) {
         return (
           <TouchableWithoutFeedback

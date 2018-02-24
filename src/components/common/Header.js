@@ -27,7 +27,7 @@ const LogoContainer = styled.Image`
 `;
 
 class Header extends Component {
-  static PropTypes = {
+  static propTypes = {
     openDrawer: PropTypes.func.isRequired
   };
 
